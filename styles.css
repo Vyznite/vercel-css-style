@@ -1,0 +1,92 @@
+/** @format */
+
+* {
+	background-color: #000;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+h1 {
+	font-weight: bolder;
+	font-family: "Noto Sans";
+	font-size: 6.8rem;
+	color: white;
+	margin-bottom: 0;
+}
+
+.desc {
+	font-family: "Noto Sans";
+	display: flex;
+	margin-top: 4rem;
+	color: #706c6b;
+	font-size: 1.4rem;
+	max-width: 760px;
+}
+
+.heading-line {
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 6.8rem;
+}
+
+.heading-line-first {
+	animation: animated-gradient-first-heading 15s linear infinite;
+}
+
+.heading-line-second {
+	animation: animated-gradient-second-heading 15s linear infinite;
+	animation-delay: 5s;
+}
+
+.heading-line-third {
+	animation: animated-gradient-third-heading 15s linear infinite;
+	animation-delay: 10s;
+}
+
+@keyframes animated-gradient-first-heading {
+	0%,
+	16.667%,
+	100% {
+		background-image: linear-gradient(to left, #ed8936, #ed64a6);
+	}
+
+	33.333%,
+	83.333% {
+		color: white;
+	}
+}
+
+@keyframes animated-gradient-second-heading {
+	0%,
+	16.667%,
+	100% {
+		background-image: linear-gradient(to left, #38b2ac, #0bc5ea);
+	}
+
+	33.333%,
+	83.333% {
+		color: white;
+	}
+}
+
+@keyframes animated-gradient-third-heading {
+	0%,
+	16.667%,
+	100% {
+		background-image: linear-gradient(to left, #ecc94b, #48bb78);
+	}
+
+	33.333%,
+	83.333% {
+		color: white;
+	}
+}
